@@ -1,4 +1,4 @@
-FROM telegraf:1.7
+FROM telegraf:1.7.1
 
 RUN export  DEBIAN_FRONTEND=noninteractive && \
      export DEBIAN_RELEASE=$(awk -F'[" ]' '/VERSION=/{print $3}'  /etc/os-release | tr -cd '[[:alnum:]]._-' ) && \
